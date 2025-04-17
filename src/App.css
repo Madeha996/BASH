@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa !important;
+  font-family: "Poppins", sans-serif;
+}
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-wrapper > *:first-child {
+  flex: 1;
+}
+/* Home Page */
+.hero {
+  background: #10b1d500;
+  background: linear-gradient(
+    120deg,
+    rgba(16, 177, 213, 1) 0%,
+    rgba(0, 131, 184, 1) 50%,
+    rgba(0, 70, 150, 1) 100%
+  );
+}
+h1.hero-title {
+  font-size: clamp(2.2rem, 8vw, 5rem);
+  background: linear-gradient(
+    120deg,
+    rgba(16, 177, 213, 1) 0%,
+    rgba(0, 131, 184, 1) 50%,
+    rgba(0, 70, 150, 1) 100%
+  );
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+.hero img {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  min-height: 40px;
+  padding: 0.5rem 0.2rem;
+  font-weight: bold;
+  color: #f8f9fa;
+  background: linear-gradient(
+    120deg,
+    rgba(16, 177, 213, 1) 0%,
+    rgba(0, 131, 184, 1) 50%,
+    rgba(0, 70, 150, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-fs {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .custom-fs {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-fs {
+    font-size: 1.2rem;
+  }
+}
